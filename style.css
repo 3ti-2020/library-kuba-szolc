@@ -1,3 +1,16 @@
-body {
-color: black;
+*{
+    margin: 1vh;
+    font-family: sans-serif;
+    width: auto;
+}
+
+table{
+    border: 1px solid brown;
+}
+th, td{
+    padding: 10px;
+}
+
+.kontrolne{
+    display: flex;
 }
