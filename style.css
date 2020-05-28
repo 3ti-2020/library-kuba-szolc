@@ -1,16 +1,114 @@
 *{
-    margin: 1vh;
+    margin: 0;
     font-family: sans-serif;
-    width: auto;
+}
+
+/* colors
+#40403e czarny
+#f25f5c czerwony
+#ffe066 zolty
+#025980 niebieski
+#70c1b3 mietowy
+#fbfffb bialy
+*/
+
+
+
+body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15vh 85vh;
+    grid-template-areas: 
+        "header header"
+        "left right";
+        background-color: #fbfffb;
+    color: #40403e
+}
+
+.header{
+    grid-area: header;
+    background-color: #fbfffb;
+    color: #40403e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 1px 20px #40403e;
+}
+.left{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.right{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header h1, .header h3{
+    margin: 0.5vh;
+    text-align: center;
+}
+
+.inserty, .delety, .tabelki{
+    width: 70%;
+    background-color: #eaeeea;
+    border-radius: 15px;
+}
+.inserty *, .delety *{
+    padding: 10px;
+    margin: 2px;
+}
+.tabelki{
+    padding: 50px 10px 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabelki table{
+    width: 80%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select, option{
+    cursor: pointer;
+    background-color: #fbfffb;
+    color: #40403e;
+    padding: 10px;
+    width: 80%;
+    margin: 1%;
+    border: 1px solid #70c1b3;
+}
+input[type=text]{
+    cursor: text;
+    width: 77%;
+}
+input[type=submit]:hover{
+    box-sizing: border-box;
+    border: 1px solid #025980;
 }
 
 table{
-    border: 1px solid brown;
+    margin: 0;
+    border: none;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 th, td{
+    background-color: #fbfffb;
     padding: 10px;
+    border: 1px solid #70c1b3;
+    margin: 0;
 }
-
-.kontrolne{
-    display: flex;
+th{
+    background-color: #d9ddd9;
 }
