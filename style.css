@@ -17,7 +17,7 @@
 body{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 15vh 85vh;
+    grid-template-rows: 12vh 88vh;
     grid-template-areas: 
         "header header"
         "left right";
@@ -60,8 +60,14 @@ body{
     border-radius: 15px;
 }
 .inserty *, .delety *{
-    padding: 10px;
+    padding: 9px;
     margin: 2px;
+}
+.inserty{
+    margin-top: 30px;
+}
+.delety{
+    margin-bottom: 30px;
 }
 .tabelki{
     padding: 50px 10px 50px 10px;
@@ -87,14 +93,15 @@ input, select, option{
     width: 80%;
     margin: 1%;
     border: 1px solid #70c1b3;
+    font-weight: 700;
 }
 input[type=text]{
     cursor: text;
-    width: 77%;
+    width: 73%;
 }
 input[type=submit]:hover{
     box-sizing: border-box;
-    border: 1px solid #025980;
+    background-color: #70c1b3;
 }
 
 table{
@@ -103,12 +110,18 @@ table{
     border-spacing: 0;
     border-collapse: collapse;
 }
-th, td{
+tr{
     background-color: #fbfffb;
     padding: 10px;
     border: 1px solid #70c1b3;
     margin: 0;
 }
+th, td{
+    padding: 10px;
+}
 th{
     background-color: #d9ddd9;
+}
+tr:hover{
+    background-color: #70c1b3;
 }
